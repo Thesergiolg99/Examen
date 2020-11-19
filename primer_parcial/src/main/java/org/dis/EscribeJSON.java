@@ -12,7 +12,7 @@ import com.google.gson.reflect.TypeToken;
 
 public class EscribeJSON {
 
-    private static final String dir_json = "D:\\Andres\\Documentos\\aauni\\DIS\\PracticaDIS\\Proyecto_DIS\\src\\main\\java\\org\\thegitbrothers\\datos\\videotecas.json";
+    private static final String dir_json = "org\\thegitbrothers\\datos\\videotecas.json";
 
     public static void crearFicheroJson(ArrayList<golfPlayer> videotecas){
         try{
@@ -23,18 +23,6 @@ public class EscribeJSON {
             System.out.println(ex);
         }
 
-    }
-
-    public static ArrayList<golfPlayer> leerFicheroJson(){
-        ArrayList<golfPlayer> videotecas = new ArrayList<golfPlayer>();
-        Gson gson = new Gson();
-        try {
-            videotecas = gson.fromJson(new FileReader(dir_json),new TypeToken<ArrayList<golfPlayer>>(){}.getType());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-
-        return videotecas;
     }
 
 }
