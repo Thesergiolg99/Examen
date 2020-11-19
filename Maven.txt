@@ -1,0 +1,7 @@
+Primero de todo creo una carpeta llamada MavenExamen, tras esto abro una ventana de comandos y con cd me ubico en ella.
+
+Tras esto, invoco a "mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart" y añado los datos que se me proponen en el ejercicio.
+
+Tras esto añado en el POM.xml las librerías que requiero para el ejercicio y guardo fichero.
+
+Por último ejecuto el "mvn Install" para compilar el proyecto.
